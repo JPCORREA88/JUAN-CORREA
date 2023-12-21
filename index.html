@@ -22,7 +22,7 @@
 <!--Fin Favicon-->
       <!--INICIO DE MENÚ-->
         <meta charset="UTF-8">
-        <title>Menu Desplegable con Logo</title>
+        <title>Script Service Desk</title>
         <style type="text/css">
           * {
             margin: 0;
@@ -95,7 +95,7 @@
             </a>
           </div>
           <ul class="nav">
-            <li><a href="https://jpcorrea88.github.io/scriptsd.github.io/">Inicio</a></li>
+            <li><a href="">Inicio</a></li>
             <li><a href="">Service Desk</a>
               <ul>
                 <li><a href="">Script</a></li>
@@ -107,17 +107,14 @@
             <li><a href="">Torre de Control</a>
               <ul>
                 <li><a href="">Script</a></li>
-                <li><a href="">Submenu2</a></li>
-                <li><a href="">Submenu3</a></li>
-                <li><a href="">Submenu4</a></li>
               </ul>
             </li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="">Sugerencias</a></li>
           </ul>
         </div>
       </body>
-      </html>  
-<!--**************************************************NO TOCAR*******************************************--> 
+      </html> 
+<!--**************************************************NO TOCAR*******************************************-->    
         <title>Lista Desplegable y Copiar Resultado</title>
         <style>
             body {
@@ -134,118 +131,184 @@
                 font-style: bold;
                 font-size: 36px;
                 text-shadow: 0 0 1px rgba(233, 233, 233, 0.441); /* Sombra suave alrededor del texto */ 
+            
             }
-<!--FINAL DE MENU-->
-<!--INICIO DE SLIDER-->
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider de Imágenes con Botones</title>
-  <style>
-    body {
-      margin: 100%;
-      font-family: Arial, sans-serif;
-    }
+    
+            label {
+                display: block; /* Colocar cada etiqueta en una línea nueva */
+                margin-bottom: 10px; /* Espacio entre etiquetas y select */
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 16px;
+            }
+    
+            select {
+                width: 400px; /* Ancho del 100% para que se ajuste al contenedor */
+                padding: 5px; /* Espacio interno en el select */
+                margin-bottom: 20px; /* Espacio inferior entre el select y el párrafo */
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */  
+            }
+    
+            div {
+                text-align: center; /* Alinear el contenido del div a la izquierda */
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+    
+            p {
+                color: #004C88; /* Color azul para el párrafo de resultado */
+                font-weight: bold; /* Texto en negrita para el párrafo de resultado */
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fuente del texto */
+                font-size: 16px; /* Tamaño del texto (por ejemplo, 16 píxeles) */
+            }
+    
+            textarea {
+                width: 800px; /* Ancho del 100% para que se ajuste al contenedor */
+                height: 250px; /* Altura fija del área de texto */
+                padding: 10px; /* Espacio interno en el área de texto */
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin-bottom: 2px; /* Espacio inferior entre el área de texto y el botón */
+                box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */  
+            }
+    
+            button {
+                background-color: #004C88; /* Fondo azul para el botón */
+                color: white; /* Texto blanco para el botón */
+                padding: 10px 20px; /* Espacio interno en el botón */
+                border: none; /* Sin borde en el botón */
+                cursor: pointer; /* Cursor de puntero al pasar el mouse */
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 16px;
+                border-radius: 4px;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la imagen */  
+            }
 
-    #slider {
-      width: 100%;
-      height: 480px;
-      overflow: hidden;
-      position: relative;
-    }
+            strong {
+                font-weight: bold;
+            }
 
-    #slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .slide {
-      min-width: 100%;
-    }
-
-    img {
-      width: 1200px;
-      height: 480px;
-    }
-
-    .slider-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 24px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.5);
-      border: turquoise;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    .prev-btn {
-      left: 10px;
-    }
-
-    .next-btn {
-      right: 10px;
-    }
-  </style>
-</head>
-<body>
-<h2>Bienvenido</h2><br><br><br>
-<div id="slider">
-  <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
-  <div id="slides">
-    <!-- Aquí van las imágenes del slider -->
-    <div class="slide"><a href="https://ufinet.com/"><img src="https://media.datacenterdynamics.com/media/images/nuevo_data_center_ufinet_2023.2e16d0ba.fill-1200x630.jpg" alt="Imagen 1"></a></div>
-    <div class="slide"><img src="https://www.intelligentcio.com/latam-es/wp-content/uploads/sites/51/2021/10/AdobeStock_294390642-web-INFINERA--1000x450.jpg" alt="Imagen 2"></div>
-    <div class="slide"><img src="https://itahora.com/wp-content/uploads/2023/02/data-center.png" alt="Imagen 3"></div>
-    <!-- Agrega más imágenes según sea necesario -->
-  </div>
-  <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
-</div>
-
-<script>
-  let currentIndex = 0;
-  const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
-
-  function showSlide(index) {
-    if (index < 0) {
-      currentIndex = totalSlides - 1;
-    } else if (index >= totalSlides) {
-      currentIndex = 0;
-    } else {
-      currentIndex = index;
-    }
-
-    const translationValue = -currentIndex * 100 + '%';
-    document.getElementById('slides').style.transform = 'translateX(' + translationValue + ')';
-  }
-
-  function nextSlide() {
-    showSlide(currentIndex + 1);
-  }
-
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
-
-  setInterval(nextSlide, 5000);
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prohibido Clic Derecho</title>
-<script>
-  document.addEventListener('contextmenu', function (e) {
-    e.preventDefault(); // Evita que aparezca el menú contextual al hacer clic derecho
-    alert('Clic derecho está prohibido en esta página.');
-  });
-</script>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 0px;
-  }
-  <!--fin de click-->
+            button:hover {
+                background-color: darkblue; /* Cambiar color al pasar el mouse sobre el botón */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Script Service Desk</h2>
+    <br><br>
+        <label for="opciones"><b>Selecciona una opción:</b></label>
+        <select id="opciones">
+            <option value="opcion17">COPIAR A N1</option>
+            <option value="opcion18">COPIAR A CALIDAD Y SERVICIOS</option>
+            <option value="opcion1">CAÍDA TOTAL (CON CREDENCIALES)</option>
+            <option value="opcion2">CAÍDA TOTAL (SIN CREDENCIALES)</option>
+            <option value="opcion3">DEGRADACIÓN, SSA, CA (CON CREDENCIALES)</option>
+            <option value="opcion4">DEGRADACIÓN, SSA, CA (SIN CREDENCIALES)</option>
+            <option value="opcion5">CREACIÓN CORTO</option>
+            <option value="opcion6">VALIDACIÓN OPERATIVIDAD</option>
+            <option value="opcion7">IFX / RED COMPLEMENTARIA</option>
+            <option value="opcion8">DUPLICIDAD</option>
+            <option value="opcion9">NO ENVÍA ID / TICKET</option>
+            <option value="opcion10">GRÁFICAS DE CONSUMO</option>
+            <option value="opcion11">DADO DE BAJA/INACTIVO/BAJA LÓGICA</option>
+            <option value="opcion12">ACCESOS</option>
+            <option value="opcion13">MONITOREO SOLARWINDS</option>
+            <option value="opcion14">ID ENCONTRADO AZTECA</option>
+            <option value="opcion15">PIT CHILE</option>
+            <option value="opcion16">DESCARTE FOTOGRÁFICO IFX</option>
+        </select>
+    
+        <div>
+            <p>Resultado:</p><br>
+            <textarea id="resultado" rows="30" cols="100%" readonly></textarea>
+            
+        </div>   
+        <br><br><button id="botonCopiar">Copiar Script</button>
+    
+        <script>
+            // Obtén referencias a elementos HTML
+            var selectOpciones = document.getElementById("opciones");
+            var resultadoTextarea = document.getElementById("resultado");
+            var botonCopiar = document.getElementById("botonCopiar");
+    
+            // Maneja el evento de cambio en la lista desplegable
+            selectOpciones.addEventListener("change", function () {
+                var seleccion = selectOpciones.value;
+                mostrarResultado(seleccion);
+            });
+    
+            // Función para mostrar el resultado en el textarea
+            function mostrarResultado(opcion) {
+                var resultado = "";
+    
+                // Lógica para determinar el resultado según la opción seleccionada
+                switch (opcion) {
+                    case "opcion17":
+                        resultado = "Estimado cliente, buen día.\n\nSe agrega en copia a nuestros ingenieros de soporte N1 para dar seguimiento a su solicitud."
+                        break;
+                    case "opcion18":
+                        resultado = "Estimado cliente, buen día.\n\nSe agrega en copia a nuestro equipo de Calidad y Servicios para dar seguimiento a su solicitud."
+                        break;
+                        case "opcion1":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nLe informamos que hemos procedido a crear el registro TTTTTT, así mismo agradecemos tomar en cuenta que para evitar retrasos ante una posible movilización de nuestros ingenieros de campo, es necesario contar con su confirmación de descartes de primer nivel (energía y conexión de equipos) y los siguientes datos:\n\n-Contacto Local (nombre y teléfono).\n-Dirección exacta y horario de atención.\n-Requerimientos para el acceso.\n-Registro fotográfico (opcional).\n\nHemos validado en nuestro sistema y su empresa ya cuenta con credenciales para generar el reporte de su incidencia a través del portal web, para futuras ocasiones favor acceder a nuestro portal, visitando el enlace https://ticketing.ufinet.com/es-ES/ y siga las instrucciones para enviar su reporte de incidencia.\n\nLas credenciales asignadas son multiusuario:\n\nNombre de usuario:\nContraseña:\n\nSi tiene alguna pregunta o necesita ayuda para acceder a nuestro portal web, no dude en ponerse en contacto, puede respondernos a través de este correo y/o comunicarse a nuestras líneas de atención y con gusto los atenderemos.";
+                        break;
+                    case "opcion2":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nLe informamos que hemos procedido a crear el registro TTTTTT, así mismo agradecemos tomar en cuenta que para evitar retrasos ante una posible movilización de nuestros ingenieros de campo, es necesario contar con su confirmación de descartes de primer nivel (energía y conexión de equipos) y los siguientes datos:\n\n-Contacto Local (nombre y teléfono).\n-Dirección exacta y horario de atención.\n-Requerimientos para el acceso\n-Registro fotográfico (opcional).\n\nTener en cuenta que, a partir del 1º. de agosto el reporte de sus incidencias se debe generar a través del portal web, esto nos permitirá mejorar nuestra capacidad de respuesta y brindar un mejor servicio a nuestros clientes.\n\nPara acceder a nuestro portal, por favor, visite el enlace https://ticketing.ufinet.com/es-ES/ y siga las instrucciones para enviar su reporte de incidencia.\n\nPara solicitar su credencial o si no ha podido acceder a nuestro portal, favor enviar a nuestro correo electrónico noclatam@ufinet.com la siguiente información:\n\nNombre Empresa - Nombre Solicitante - Correo Electrónico - Teléfono de contacto\n\nSi tiene alguna pregunta o necesita ayuda para acceder a nuestro portal web, no dude en ponerse en contacto, puede respondernos a través de este correo y/o comunicarse a nuestras líneas de atención y con gusto los atenderemos.";
+                        break;
+                    case "opcion3":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nLe informamos que hemos procedido a crear el registro TTTTT, cualquier duda o comentario se puede comunicar por esta vía o a los números asignados a cada país, abajo descritos y nuestros representantes de Service Desk, con gusto le resolverán.\n\nHemos validado en nuestro sistema y su empresa ya cuenta con credenciales para generar el reporte de su incidencia a través del portal web, para futuras ocasiones favor acceder a nuestro portal, visitando el enlace https://ticketing.ufinet.com/es-ES/ y siga las instrucciones para enviar su reporte de incidencia.\n\nLas credenciales asignadas son multiusuario:\n\nNombre de usuario:\nContraseña:\n\nSi tiene alguna pregunta o necesita ayuda para acceder a nuestro portal web, no dude en ponerse en contacto, puede respondernos a través de este correo y/o comunicarse a nuestras líneas de atención y con gusto los atenderemos.";
+                        break;
+                    case "opcion4":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nLe informamos que hemos procedido a crear el registro TTTTT, cualquier duda o comentario se puede comunicar por esta vía o a los números asignados a cada país, abajo descritos y nuestros representantes de Service Desk, con gusto le resolverán.\n\nTener en cuenta que, a partir del 1º. de agosto el reporte de sus incidencias se debe generar a través del portal web, esto nos permitirá mejorar nuestra capacidad de respuesta y brindar un mejor servicio a nuestros clientes.\n\nPara acceder a nuestro portal, por favor, visite el enlace https://ticketing.ufinet.com/es-ES/ y siga las instrucciones para enviar su reporte de incidencia.\n\nPara solicitar su credencial o si no ha podido acceder a nuestro portal, favor enviar a nuestro correo electrónico noclatam@ufinet.com la siguiente información:\n\nNombre Empresa - Nombre Solicitante - Correo Electrónico - Teléfono de contacto\n\nSi tiene alguna pregunta o necesita ayuda para acceder a nuestro portal web, no dude en ponerse en contacto, puede respondernos a través de este correo y/o comunicarse a nuestras líneas de atención y con gusto los atenderemos.";
+                        break;
+                    case "opcion5":
+                        resultado = "Estimado cliente, buen día.\n\nLe informamos que hemos procedido a crear el registro TTTTT. Cualquier duda o comentario se puede comunicar por esta vía o a los números asignados a cada país, los cuales se describen a continuación. Además, nuestros representantes de Service Desk estarán encantados de ayudarle.";
+                        break;
+                    case "opcion6":
+                        resultado = "Estimado cliente, buen día.\n\nSolicitamos su apoyo validando el estado actual del servicio reportado y, en caso de que se encuentre operativo, por favor indicarnos si podemos proceder con el cierre de ticket.\n\nQuedamos atentos.";
+                        break;
+                    case "opcion7":
+                        resultado = "Estimados IFX, buen día.\n\nLes informamos que, al validar la información del ID IDIDIDID, hemos observado que se trata de un servicio que utiliza la red complementaria. Por lo tanto, solicitamos su colaboración para que nos proporcionen la plantilla de escalación acostumbrada.\n\nDe momento procederemos con el cierre del ticket TTTTTTTT y al momento de recibir los datos procederemos con la generación de un nuevo caso para darle el seguimiento correcto.";
+                        break;
+                    case "opcion8":
+                        resultado = "Estimado cliente, buen día.\n\nLe informamos que actualmente ya se encuentra este servicio reportado bajo el ticket TTTTT y se le estará dando seguimiento. Procederemos con el cierre de este ticket por duplicidad.";
+                        break;
+                    case "opcion9":
+                        resultado = "Estimado cliente, buen día.\n\nAgradeceríamos que nos pudiera compartir el ID asignado por parte de Ufinet para dicho servicio, o bien, compartir algún ticket anterior como referencia. En caso de desconocer cuál es el ID, por favor consulte con su área comercial.";
+                        break;
+                    case "opcion10":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nEn seguimiento a su petición, le informamos que hemos creado las gráficas de consumo correspondientes a las últimas XXXX horas. Adjunto encontrará el archivo solicitado.";
+                        break;
+                    case "opcion11":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nLe informamos que, al validar en nuestro sistema, hemos encontrado que el ID IDIDIDID está DADO DE BAJA. Por favor, solicitamos que verifiquen que el ID sea el correcto o que se pongan en contacto con el área comercial.";
+                        break;
+                    case "opcion12":
+                        resultado = "Estimado cliente, buen día.\n\nEn seguimiento a su petición de accesos, le informamos que fueron autorizados. Se adjunta información.";
+                        break;
+                    case "opcion13":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nLe informamos que actualmente se está llevando seguimiento a su caso a través del ticket TTTTTT. Estamos trabajando para restablecer la plataforma de monitoreo lo más pronto. ";
+                        break;
+                    case "opcion14":
+                        resultado = "Estimado cliente, agradecemos su comunicación.\n\nEn seguimiento a su petición, le informamos que hemos encontrado el ID IDIDIDID (Tramo 1 - Tramo 2). Agradeceríamos confirmar si esta es la información correcta para la creación del ticket.";
+                        break;
+                    case "opcion15":
+                        resultado = "Estimados @PIT Chile NOC Team, le deseamos un excelente día.\n\nDando seguimiento a la alarma notificada por su monitoreo, agradecemos validar de su lado si el servicio se encuentra afectado para continuar con las validaciones de nuestro lado.";
+                        break;
+                    case "opcion16":
+                        resultado = "Estimado IFX, buen día.\n\nEn seguimiento a su solicitud, le informamos que, al validar la información suministrada, no encontramos descarte fotográfico del equipo. Requerimos de su colaboración para enviarnos el descarte fotográfico para poder escalar con el área correspondiente.";
+                        break;
+                    }
+    
+                resultadoTextarea.value = resultado;
+            }
+    
+            // Maneja el evento de clic en el botón de copiar
+            botonCopiar.addEventListener("click", function () {
+                resultadoTextarea.select();
+                document.execCommand("copy");
+                window.getSelection().removeAllRanges();
+            });
+    
+            // Inicializa el resultado con la opción predeterminada
+            mostrarResultado(selectOpciones.value);
+        </script>
 </body>
 </html>
